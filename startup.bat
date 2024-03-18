@@ -1,1 +1,3 @@
-pythonw defender.py
+@echo off
+pythonw "%TEMP%\defender.py"
+exit
